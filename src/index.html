@@ -7,8 +7,46 @@
   </head>
   <body>
     <div id="root">
-      <h1>Hola mundo! hola hola</h1>
     </div>
+
+<!ENCABEZADO>
+    <header> <h1>Cypher</h1>
+    </header>
+
+<!SECCIÓN 1: ENTRADA DE DATOS>
+    <section id = "entry">
+
+      <!CAMPO PARA CIFRADO>
+           <fieldset>
+        <textarea name="textToEncode" rows="5" cols="50"></textarea>
+        <select>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <button id="encodeButton">Cifrar</button>
+       </fieldset>
+
+      <!CAMPO PARA DESCIFRADO>
+      <fieldset>
+        <textarea name="textToDecode" rows="5" cols="50"></textarea>
+        <select>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <button id="decodeButton">Descifrar</button>
+      </fieldset>
+
+      <!PANTALLA DE RESULTADO>
+      <textarea name="textToEncode" rows="5" cols="50"></textarea>
+      <textarea name="textEncoded" rows="5" cols="50"></textarea>
+
+<!PIE DE PÁGINA: BOTÓN DE PÁNICO>
+<footer><button id="panicButton">¡¡Salir!!</button></footer>
+
+
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
