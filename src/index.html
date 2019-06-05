@@ -10,33 +10,31 @@
     </div>
 
 <!ENCABEZADO>
-    <header> <h1>Cypher</h1>
+    <header> <h1>Cipher</h1>
     </header>
 
 <!SECCIÓN 1: ENTRADA DE DATOS>
     <section id ="entry">
 
-      <!CAMPO PARA CIFRADO>
-      <fieldset>
-        <textarea name="textToEncode" rows="5" cols="50"></textarea>
+      <!CAMPO PARA CIFRADO/DESCIFRADO>
+        <textarea id="text" rows="5" cols="50"></textarea>
         <input type="number" id="offsetEncode" min="1" max="999">
-        <button id="encodeButton">Cifrar</button>
-       </fieldset>
 
-      <!CAMPO PARA DESCIFRADO>
-      <fieldset>
-        <textarea name="textToDecode" rows="5" cols="50"></textarea>
-        <input type="number" id="offsetDecode" min="1" max="999">
+      <!BOTÓN PARA CIFRADO>
+        <button id="encodeButton">Cifrar</button>
+
+      <!BOTÓN PARA DESCIFRADO>
         <button id="decodeButton">Descifrar</button>
-      </fieldset>
+
     </section>
 
-      <!PANTALLA DE RESULTADO>
+  <!SECCIÓN 2: PANTALLA DE RESULTADO>
     <section id ="result">
       <textarea name="textToEncode" rows="5" cols="50" disabled></textarea>
       <textarea name="textEncoded" rows="5" cols="50" disabled></textarea>
 
-      <button id="resetButton" type="reset" value="Reset">Volver al inicio</button>
+      <p> <button id="resetButton" type="reset" value="Reset">Volver al inicio</button>
+        </p>
     </section>
 
 <!PIE DE PÁGINA: BOTÓN DE PÁNICO>
