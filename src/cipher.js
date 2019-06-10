@@ -1,15 +1,18 @@
 //ARCHIVO PARA LAS FUNCIONES
 
 window.cipher = {
-  decode: function(textToProcess) {
+  encoding: function(textToProcess) {
+    ///
     console.log(textToProcess);
-    let textSplit = textToProcess.split("");
+    const textSplit = textToProcess.split("");
+    ///
     console.log(textSplit);
-    // arrow function const funcion = () =>
-    let check = textSplit.map((letra) => {
-      return letra.charCodeAt();
+    // arrow function const funcion = () =>*
+    let letters = textSplit.map((x) => {
+    return x.charCodeAt();
     })
-    console.log(check)
+    ///
+  console.log(letters);
   }
   // AQUÍ UN OBJETO QUE CONSTA DE PROPIEDAD Y SU VALOR...
 
