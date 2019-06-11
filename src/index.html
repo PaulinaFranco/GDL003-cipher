@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-<!<div id="root"></div>
+
 
 <!ENCABEZADO>
     <header> <h1 id="title">Cipher</h1>
@@ -16,8 +16,8 @@
     <section id ="entry">
 
       <!CAMPO PARA CIFRADO/DESCIFRADO>
-        <p><textarea id="text"></textarea></p>
-        <p><input type="number" id="offsetSelector" min="1" max="999"></p>
+        <p><textarea id="text" placeholder="Escribe aquí tu texto..." required></textarea></p>
+        <p><input type="number" id="offsetSelector" placeholder="Elige el desplazamiento" min="1" max="999" required></p>
 
       <!BOTONES PARA CIFRADO Y DESCIFRADO>
         <button id="encodeButton">Cifrar</button>
@@ -30,8 +30,8 @@
 
   <!SECCIÓN 2: PANTALLA DE RESULTADO>
     <section id ="product">
-      <textarea id="originalText" class="productTextArea" rows="5" cols="50" disabled></textarea>
-      <textarea id="resultText" class="productTextArea" rows="5" cols="50" disabled></textarea>
+      <textarea id="originalText" class="productTextArea" rows="5" cols="50" readonly></textarea>
+      <textarea id="resultText" class="productTextArea" rows="5" cols="50" readonly></textarea>
 
       <p> <button id="resetButton" type="reset" value="Reset">Volver al inicio</button>
         </p>
@@ -40,9 +40,9 @@
 
 
 <!PIE DE PÁGINA: BOTÓN DE PÁNICO>
-<footer><button id="panicButton">SALIR</button></footer>
+<footer><button id="panicButton">Salir ya</button></footer>
 
 <script src="index.js"></script>
-    <script src="cipher.js"></script>
+<script src="cipher.js"></script>
   </body>
 </html>
