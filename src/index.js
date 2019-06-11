@@ -10,8 +10,13 @@ document.getElementById("panicButton").addEventListener("click", function(){
 let valueText = textToProcess.value;
 console.log(window.cipher.encode (textToProcess));
 });
-///FALTA ACTIVAR BOTÓN DE REGRESO -resetButton
 
+document.getElementById("resetButton").addEventListener("click", showEntry);
+function showEntry (){
+  document.getElementById("product").style.display = "none";
+  document.getElementById("entry").style.display= "block";
+  
+};
 
 //tengo problemas para mostrar elemento product
 function showEncode (){
