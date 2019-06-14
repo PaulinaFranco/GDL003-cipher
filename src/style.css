@@ -1,6 +1,13 @@
 body {
 
 }
+p {
+  text-align: center;
+  color: #191970;
+  font-family: sans-serif;
+  font-size: 1em;
+  padding: 7px;
+}
 #title {
   text-align: center;
   padding: 2px;
@@ -22,9 +29,9 @@ body {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  font-size: 16px;
+  font-size: 40px;
   height: 10em;
-  width: 40em;
+  width: 20em;
 }
 
 #offsetSelector {
@@ -34,6 +41,12 @@ body {
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
+  padding: 1px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 20px;
+  height: 3em;
+  width: 10em;
 }
 
 #encodeButton, #decodeButton {
@@ -41,7 +54,7 @@ body {
   border-radius: 10px;
   color: white;
   padding: 8px 32px;
-  font-size: 18px;
+  font-size: 30px;
   opacity: 0.8;
   display: block;
   margin-left: auto;
@@ -76,6 +89,8 @@ body {
   font-size: 16px;
   height: 7em;
   width: 40em;
+  position: relative;
+  top: 50px;
 }
 
 #panicButton {
@@ -96,7 +111,7 @@ body {
 }
 
 #resetButton {
-  background-color: #191970;
+  background-color: #f27720;
   border-radius: 10px;
   color: white;
   padding: 8px 32px;
