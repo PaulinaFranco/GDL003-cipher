@@ -9,7 +9,7 @@
 
 
 <!ENCABEZADO>
-    <header> <h1 id="title">Cipher</h1>
+    <header> <h1 id="title">Cipher Apoyo</h1>
     </header>
 
 <!SECCIÓN 1: ENTRADA DE DATOS>
@@ -17,22 +17,21 @@
 
       <!CAMPO PARA CIFRADO/DESCIFRADO>
         <p><textarea id="text" placeholder="Escribe aquí tu texto..." required></textarea></p>
-        <p><input type="number" id="offsetSelector" placeholder="Elige el desplazamiento" min="1" max="999" required></p>
+        <p><input type="number" id="offsetSelector"  placeholder="desplazamiento" min="1" max="999" required></p>
 
       <!BOTONES PARA CIFRADO Y DESCIFRADO>
         <button id="encodeButton">Cifrar</button>
-        <button id="decodeButton">Descifrar</button>
-
-        <!PÁRRAFO PARA PRUEBAS>
-        <p id:paragraph></p>
-
+        <button id="decodeButton">Traducir</button>
     </section>
 
   <!SECCIÓN 2: PANTALLA DE RESULTADO>
     <section id ="product">
+      <p id ="titleOriginalTxt">TEXTO ORIGINAL</p>
       <textarea id="originalText" class="productTextArea" rows="5" cols="50" readonly></textarea>
+      <p id ="titleProcessedTxt">TEXTO PROCESADO</p>
       <textarea id="resultText" class="productTextArea" rows="5" cols="50" readonly></textarea>
 
+      <!BOTÓN DE RESET>
       <p> <button id="resetButton" type="reset" value="Reset">Volver al inicio</button>
         </p>
     </section>
