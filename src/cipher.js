@@ -1,39 +1,27 @@
-//ARCHIVO PARA LAS FUNCIONES
-
 window.cipher = {
-    encode: function(textToProcess) {
-            console.log(textToProcess.value);
-            let textSplit = textToProcess.value.split("");
-            console.log(textSplit);
-    // arrow function const funcion = () =>*
-            let valueOffset = document.getElementById("offsetSelector");
-            let almostEncoded = textSplit.map((x) =>
-            String.fromCharCode(x.charCodeAt() + valueOffset.value %26));
-
-            console.log(almostEncoded);
-            console.log(typeof almostEncoded);
-            console.log(Array.isArray(almostEncoded));
-            return almostEncoded.join("");
-          },
-
-
- decode: function(textToProcess) {
+    encode:
+        (valueOffset, textToProcess) => {
         console.log(textToProcess.value);
-        let textSplit = textToProcess.value.split("");
-        console.log(textSplit);
-        let valueOffset = document.getElementById("offsetSelector");
-        let almostDecoded = textSplit.map((x) =>
+        let textSplitECD = textToProcess.value.split("");
+        console.log(textSplitECD);
+        let almostEncoded = textSplitECD.map((x) =>
+          String.fromCharCode(x.charCodeAt() + valueOffset.value%26)) ;
+
+          //let alreadyEncoded =  String.fromCharCode
+        console.log(almostEncoded);
+        console.log(typeof almostEncoded);
+        console.log(Array.isArray(almostEncoded));
+        return almostEncoded.join("");
+      },
+
+    decode:
+       (valueOffset, textToProcess) => {
+          console.log(textToProcess.value);
+        let textSplitDCD = textToProcess.value.split("");
+          console.log(textSplitDCD);
+        let almostDecoded = textSplitDCD.map((x) =>
         String.fromCharCode(x.charCodeAt() - valueOffset.value %26));
-        console.log(almostDecoded);
+          console.log(almostDecoded);
         return almostDecoded.join("");
 }
 };
-          // arrow function const funcion = () =>*
-          //  let valueOffset = document.getElementById("offsetSelector");
-
-/*  //AÚN NO ENTIENDO ESTA FÓRMULA
-function decode("textToProcess") {
-  let textSplit = textToProcess.split(" ");
-  let check = textSplit.map(1 => 1.charCodeAt());
-}*/
-  //string? array? y offset serían los parámetro
